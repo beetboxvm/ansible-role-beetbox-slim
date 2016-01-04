@@ -1,0 +1,6 @@
+---
+beet_root: "/path/to/project"
+slim_create_new: no
+slim_verison: ""
+slim_add_example: no
+slim_add_htaccess: no

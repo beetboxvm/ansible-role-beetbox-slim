@@ -1,0 +1,30 @@
+---
+- name: Ensure beetbox_docroot directory exists.
+  file:
+    path: "{{ beet_root }}"
+    state: directory
+    mode: 0775
+  become: no
+
+- name: Install Slim and all required dependencies.
+  command: >
+    {{ composer_path }} require slim/slim "{{ slim_verison }}"
+    chdir="{{ beet_root }}"
+    creates="{{ beet_root }}/vendor/autoload.php"
+  notify: restart webserver
+  become: no
+  when: slim_create_new
+
+- name: Create hello world example app.
+  copy:
+    src: "helloworld.php"
+    dest: "{{ beet_root }}/index.php"
+  become: no
+  when: slim_add_example
+
+- name: Create .htaccess.
+  copy:
+    src: ".htaccess"
+    dest: "{{ beet_root }}/.htaccess"
+  become: no
+  when: slim_add_htaccess
