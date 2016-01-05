@@ -1,0 +1,5 @@
+---
+beet_project: slim
+slim_create_new: yes
+slim_add_example: yes
+slim_add_htaccess: yes

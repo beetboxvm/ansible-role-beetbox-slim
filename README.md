@@ -1,4 +1,4 @@
-# Ansible Role: Beetbox Backdrop
+# Ansible Role: Beetbox Slim
 
 An Ansible role that creates a Slim project on beetbox.
 
