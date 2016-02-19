@@ -4,7 +4,7 @@ An Ansible role that creates a Slim project on beetbox.
 
 ## Requirements
 
-This role is specifically developed as an extension to beetbox -- https://github.com/drupalmel/beetbox
+This role is specifically developed as an extension to beetbox -- https://github.com/beetboxvm/beetbox
 
 ## Role Variables
 
@@ -29,7 +29,7 @@ Add Slim .htaccess file.
 
 ## Dependencies
 
-- Beetbox -- https://github.com/drupalmel/beetbox
+- Beetbox -- https://github.com/beetboxvm/beetbox
 
 ## License
 
