@@ -1,5 +1,7 @@
 # Ansible Role: Beetbox Slim
 
+[![CircleCI](https://circleci.com/gh/beetboxvm/ansible-role-beetbox-slim.svg?style=svg)](https://circleci.com/gh/beetboxvm/ansible-role-beetbox-slim)
+
 An Ansible role that creates a Slim project on beetbox.
 
 ## Requirements
@@ -27,9 +29,32 @@ Add Slim .htaccess file.
     slim_add_htaccess: no
 
 
-## Dependencies
+# beetbox
 
-- Beetbox -- https://github.com/beetboxvm/beetbox
+https://github.com/beetboxvm/beetbox
+
+## Requirements
+
+* [Vagrant](https://www.vagrantup.com/) >= 1.8
+* [Virtualbox](https://www.virtualbox.org/)
+* [Vagrant Hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
+* [Vagrant Auto-network](https://github.com/oscar-stack/vagrant-auto_network)
+
+## Quickstart
+
+  1. Open terminal (or [git bash](https://msysgit.github.io/) for windows users) and run the following commands --
+
+  ```
+  git clone https://github.com/beetboxvm/ansible-role-beetbox-slim.git slim && cd $_
+  vagrant up
+  ```
+
+  2. Go to http://slim.local/
+
+  ```
+  username: admin
+  password: admin
+  ```
 
 ## License
 
